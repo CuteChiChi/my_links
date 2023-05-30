@@ -25,7 +25,7 @@
 	$( document ).ready(function() {
 		
 		console.log( "ready!" );
-		setTimeout(click_only, 1500);
+		//setTimeout(click_only, 1500);
 		//setTimeout(click_to_open, 3000);
 		
 		$url = "https://direct-link.net/649196/sea-dogs-ost-mp3-format";
@@ -83,8 +83,10 @@
 		console.log(queryString);
 		const urlParams = new URLSearchParams(queryString);
 		const is_wk = urlParams.get('is_wk');
+		console.log(is_wk);
 		
 		if (is_wk == 'yes'){
+			links = [];
 			$url = "https://workink.net/4Ua/liauxp8q";
 			links.push($url);
 			$url = "https://workink.net/4Ua/liatb85p";
